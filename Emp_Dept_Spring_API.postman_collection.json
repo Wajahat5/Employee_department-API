@@ -1,0 +1,243 @@
+{
+	"info": {
+		"_postman_id": "c8313a2f-c95a-4227-b271-3eac29988b72",
+		"name": "Emp_Dept_Spring_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all departments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/department/all",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"department",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add new department",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"name\":\"dept2\",\r\n    \"location\":\"loc2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/department",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"department"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get dept by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/department/2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"department",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update department by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"dept2 updated\",\r\n    \"location\":\"loc2 updated\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/department/2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"department",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete dept by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/department/2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"department",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"emp2\",\r\n    \"location\" : \"loc1\",\r\n\t\"manager_id\" : \"101\",\r\n\t\"hire_date\" : \"2022-01-01\",\r\n\t\"salary\" :100000\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/employee/2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"employee",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch all emps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/employee/all",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"employee",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch emp by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/employee/9",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"employee",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update emp",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"emp1 updated\",\r\n    \"location\" : \"loc1 updated\",\r\n\t\"manager_id\" : \"101\",\r\n\t\"hire_date\" : \"2022-01-01\",\r\n\t\"salary\" :100000,\r\n\t\"departmentid\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/employee/4",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"employee",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete emp",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/employee/10",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"employee",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all employees of department",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/employee/department/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"employee",
+						"department",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
